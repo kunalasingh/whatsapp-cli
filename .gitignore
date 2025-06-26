@@ -27,3 +27,6 @@ dist/
 
 # Logs and debug files
 *.log
+
+# PyWhatKit log file
+pywhatkit_dbs.txt
