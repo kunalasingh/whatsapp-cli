@@ -3,11 +3,6 @@ import argparse
 from whatsapp_cli.core import send_message, load_contacts, save_contacts
 
 def cli():
-    import sys
-import argparse
-from whatsapp_cli.core import send_message, load_contacts, save_contacts
-
-def cli():
     parser = argparse.ArgumentParser(
         prog="whatsapp",
         description="A command-line tool to send WhatsApp messages using WhatsApp Web.",
@@ -47,7 +42,7 @@ def cli():
 
     if args.command == "list":
         contacts = load_contacts()
-        print("📇 Saved Contacts:")
+        print("Saved Contacts:")
         for name in contacts:
             print(f" - {name}")
     elif args.command == "send":
