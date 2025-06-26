@@ -1,0 +1,29 @@
+# Bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+
+# macOS and system files
+.DS_Store
+
+# Encrypted contacts (DO NOT COMMIT!)
+contacts.enc
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# Build and packaging
+build/
+dist/
+*.egg-info/
+
+# Logs and debug files
+*.log
