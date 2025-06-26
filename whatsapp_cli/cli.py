@@ -41,6 +41,9 @@ def cli():
     update_parser.add_argument("-n", "--number", required=True)
 
     args = parser.parse_args()
+    if args.command is None:
+        parser.print_help()
+        sys.exit(1)
 
     if args.command == "list":
         contacts = load_contacts()
@@ -72,10 +75,6 @@ def cli():
             print(f"Contact '{args.contact}' not found.")
     else:
         parser.print_help()
-
-if args.command is None:
-    parser.print_help()
-    sys.exit(1)
 
 if __name__ == "__main__":
     cli()
